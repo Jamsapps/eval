@@ -1,0 +1,68 @@
+:root {
+    padding: 0;
+    margin: 0;
+    line-height: 1.7rem;
+    --color: #7e7e7e;
+}
+
+/* header & nav */
+header {
+    display: flex;
+    position: sticky;
+    width: auto;
+    height: 15rem;
+    background-image: linear-gradient(to bottom right, var(--color), beige);
+}
+
+nav>ul {
+    list-style-type: none;
+    letter-spacing: 0.2rem;
+}
+
+nav>ul>li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav>ul>li:hover a{
+    color: beige;
+}
+
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* item grid */
+.title {
+    text-align: center;
+}
+.img {
+    object-fit: contain;
+    width: 250px;
+    height: auto;
+    padding: 1rem;
+    left: 0;
+    top: 0;
+}
+section p {
+    top: 0;
+    left: 0;
+    border: 2px black solid;
+    width: 80%;
+    box-shadow: 1px 1px 10px lightgray;
+}
+
+/* footer */
+footer{
+    margin-top: 30%;
+    background-image: linear-gradient(to bottom right, var(--color), beige);
+}
