@@ -1,0 +1,130 @@
+:root {
+   margin: 0;
+   padding: 0;
+   line-height: 5rem;
+   box-sizing: border-box;
+}
+
+header {
+    background-color: #f8f9fa;
+    height: 10rem;
+}
+
+h1 {
+    font-size: 14rem;
+    background: -webkit-linear-gradient(rgb(0, 0, 255), rgb(134, 134, 134), rgb(4, 209, 192));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.image{
+    float: left;
+    width: 250px;
+    height: 173px;
+    object-fit: cover;
+}
+
+.nav-link {
+    color: black;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.nav-link:hover {
+    color: beige;
+}
+
+/* body */
+.image-aside, .event {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.flash-info {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin: 1.5rem;
+}
+
+.p1, .p2 {
+    text-align: center;
+    color: gray;
+    text-shadow: 0px 0px 1px black;
+    word-wrap: break-word;
+    width: auto;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+main section article {
+    box-shadow: 0px 0px 3px red;
+    word-wrap: break-word;
+    border-radius: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    box-shadow: 1px 2px 5px lightblue;
+    text-align: center;
+    padding: 2rem;
+}
+
+main aside span {
+    color: green;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: #f8f9fa;
+    margin: 0; 
+}
+
+.Logo {
+    padding: 0.3rem;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+footer p {
+    text-align: center;
+}
+
+.copyright {
+    padding: 1rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    main section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-fluid section article {
+        width: 100%;
+    }
+
+    .container-fluid section aside {
+        width: 100%;
+    }
+
+    header {
+        position: relative;
+        height: auto;
+    }
+}
