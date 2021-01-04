@@ -1,0 +1,108 @@
+:root {
+   margin: 0;
+   padding: 0;
+   line-height: 5rem;
+   box-sizing: border-box;
+}
+
+header {
+    background-color: #f8f9fa; 
+    height: auto;
+    position: sticky;
+}
+
+header h1 {
+    font-size: 5rem;
+    background: -webkit-linear-gradient(rgb(255, 0, 64), rgb(134, 134, 134), rgb(247, 21, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image{
+    float: left;
+    width: 250px;
+    height: 173px;
+    object-fit: cover;
+}
+
+.nav-link {
+    color: rgb(48, 48, 48);
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: beige;
+}
+
+/* body */
+
+.flash-info, .event, .image-aside{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.p1,.p2 {
+    text-align: center;
+    word-wrap: break-word;
+    padding: 1rem;
+}
+
+article  {
+    box-shadow: 0px 0px 5px red;
+}
+
+aside {
+    box-shadow: 1px 2px 6px lightblue;
+}
+
+article, aside {
+    text-align: center;
+    padding: 1.5rem;
+    word-wrap: break-word;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+aside span {
+    color: green;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: #f8f9fa;
+    margin-bottom: 0; 
+    position: sticky;
+}
+
+.Logo {
+    padding: 0.3rem;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+footer p {
+    text-align: center;
+}
+
+.copyright {
+    padding: 1rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn button{
+        width: 9rem;
+    }
+}
