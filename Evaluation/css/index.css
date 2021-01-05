@@ -1,0 +1,132 @@
+/*html */
+
+:root {
+   margin: 0;
+   padding: 0;
+   line-height: 5rem;
+   box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-color: #f8f9fa; 
+    height: auto;
+    position: sticky;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    background: -webkit-linear-gradient(rgb(255, 0, 64), rgb(134, 134, 134), rgb(247, 21, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image{
+    float: left;
+    width: 250px;
+    height: 173px;
+    object-fit: cover;
+}
+
+.nav-link {
+    color: rgb(248, 248, 248);
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: beige;
+}
+
+/* body */
+
+.flash-info, .event, .image-aside{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.p1,.p2 {
+    text-align: center;
+    word-wrap: break-word;
+    padding: 1rem;
+}
+
+.p1 {
+    font-size: 1.5rem;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+article  {
+    box-shadow: 0px 0px 5px red;
+}
+
+aside {
+    box-shadow: 1px 2px 6px lightblue;
+}
+
+
+aside, article {
+    text-align: center;
+    padding: 1.5rem;
+    word-wrap: break-word;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+aside span {
+    color: green;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: #f8f9fa;
+    margin-bottom: 0; 
+    position: sticky;
+}
+
+.container{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 20rem;
+}
+
+.Logo {
+    margin: 1rem;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+footer p {
+    text-align: center;
+}
+
+.copyright {
+    padding: 1rem;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /* section */
+    main section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* button */
+    .btn button{
+        width: 9rem;
+    }
+}

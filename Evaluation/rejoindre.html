@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="./css/rejoindre.css" rel="stylesheet">
+    <title>Rejoindre As-Sos</title>
+</head>
+<body>
+
+<header>
+    <h3 class="text-center">Rejoindre As-Sos</h3>
+</header>
+
+<!-- Formulaire -->
+<div class="container-form">
+    <form>
+        <div class="container row align-item-center">
+            <!--input and label-->
+            <div class="input-group input-group-md mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Prénom :</span>
+                <input type="text" class="form-control" id="prenom" placeholder="Prénom" required>
+            </div>
+
+            <div class="input-group input-group-md mb-3">
+                <span class="input-group-text col-3" id="inputGroup-sizing-sm">Nom :</span>
+                <input type="text" class="form-control" id="nom" placeholder="Nom" required>
+            </div>
+
+            <div class="input-group input-group-md mb-3">
+                <span class="input-group-text col-3" id="inputGroup-sizing-sm">Date de naissance:</span>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+
+            <div class="input-group input-group-md mb-3">
+                <span class="input-group-text col-3" id="inputGroup-sizing-sm">E-mail</span>
+                <input type="email" class="form-control" id="email" placeholder="Votremail@exemple.com" required>
+            </div>
+            
+            <!-- Fin input and label -->
+
+            <!-- Select group -->
+            <div class="select-group">
+                <select class="form-select">
+                    <option selected>Votre situation</option>
+                    <option value="1">Étudiant</option>
+                    <option value="2">En recherche d'emploi</option>
+                    <option value="3">Autre</option>
+                </select>
+            </div>
+
+            <!-- Text Area -->
+            <div class="mt-4">
+                <textarea type="text" class="form-control" id="message" rows="5" placeholder="Pourquoi, souhaitez-vous nous rejoindre ?" required></textarea>
+            </div>
+
+                <button type="submit" class="btn btn-primary">Envoyé</button>
+            </div>
+        </form>
+    </div>
+
+
+       
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

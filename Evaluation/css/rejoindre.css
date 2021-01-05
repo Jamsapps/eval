@@ -1,0 +1,40 @@
+:root, body {
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+header {
+    background-image: linear-gradient(to right bottom, white, grey);
+    height: 5rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(138, 138, 138), rgb(65, 65, 65));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#inputGroup-sizing-sm{
+    width: 10rem;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 1rem;
+    width: 50rem;
+    padding: 2rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
