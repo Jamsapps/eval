@@ -7,36 +7,47 @@
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>As-Sos</title>
-    <meta name="description" content="Une association crée en 1950, nous sommes plus de 150.000 personnes qui combattent chaques jours
+    <meta name="description" content="Une association crée en 1950, nous sommes plus de 150.000 personnes qui combattent chaques jours,
     les mauvaises actions envers l'humanités partout dans le monde.">
 </head>
 <body>
     <div class="container-fluid">
         <header class="row">
             <h1 class="text-center">As-Sos</h1>
-                <p class="p1 ">Une association crée en 1950, nous sommes plus de 150.000 personnes qui combattent chaques jours
-                    les mauvaises actions envers l'humanités partout dans le monde.
-                </p>
-            <nav class="navbar-expand-lg bg-primary">
+                <p class="p1 ">
+                    Une association crée en 1950, nous sommes plus de 150.000 personnes qui combattent chaques jours,
+                    les mauvaises actions envers l'humanités, nous aidons aussi les plus démunis partout dans le monde.
+                </p>    
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
                 <div class="container-fluid">
-                    <ul class="nav justify-content-center">
-                        <li class="nav nav-item">
-                            <a class="nav-link" href="index.html">Accueil</a>
-                            <a class="nav-link" href="event.html">Événement</a>
-                        </li>
-                    </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="event.html">Événement</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
+            </nav>      
         </header>
-
-        <div class="container">
+        
+        <!-- Main > section > Article & Aside-->
             <main>        
-                <section class="d-flex justify-content-center">
+                <section class="d-flex">
+
+                    <!-- Aside événement-->
+                <div class="container">
                     <aside class="border">
                         <img src="./Image/event.png" alt="événement" class="event border-bottom">
                         <p>
                             Rassemblement pour discuter des problèmes sociaux et des actions
-                            qui seront faite pour préserver l'humanité.
+                            qui seront faite pour préserver l'humanité et aider les plus démunis.
                             </br>
                             </br>
                             l'adresse du rassemblement sera communiqué prochainement.
@@ -44,8 +55,12 @@
                             </br>
                             Date: 05/03/2021.
                         </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal" data-bs-whatever="@getbootstrap">Participer à l'événement</button>
                     </aside>
+                </div>
 
+                    <!-- Article flash info -->
+                <div class="container">
                     <article class="border">
                         <img src="./Image/flash-info.png" class="flash-info" alt="Flash-info">
                         <p class="p2">
@@ -54,35 +69,91 @@
                         Sed corrupti enim soluta debitis necessitatibus ad illo quas quia hic.
                         </p>
                     </article>
-            
+                </div>
+                    
+                    <!-- Aside info sur As-Sos-->
+                <div class="container">
                     <aside class="border">
                         <img src="./Image/personne.jpg" class="image-aside border-bottom">
                         <p>As-Sos à aider plus de <span>60%</span> personne partout dans le monde.</p> 
-                        <p>Vous-voulez défendre l'humanité pour contrer les mauvaises actions</p>
+                        <p>Vous-voulez défendre l'humanité pour contrer les mauvaises actions ou faire de bonnes actions</p>
                         <div class="btn">
                             <a href="rejoindre.html"><button class="btn btn-primary col-15">Nous rejoindre</button></a>
                         </div>
-                    </aside>   
+                    </div>
+                    </aside>
                 </section>
             </main>
-        </div>
 
-        <div class="d-flex flex-column">
-            <div class="row justify-content-center">
-                <footer class="border py-5 mt-5">
-                    <div class="d-flex justify-content-center">
-                        <img src="./Image/facebook.png" class="Logo">
-                        <img src="./Image/linkedin.png" class="Logo">
+            <!--Modal-->
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalLabel">Inscription à l'événement</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="copyright">    
-                        <!--Copyright-->
-                        <p>&copy;As-Sos</p>
-                        <p>2020-2021</p>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Prénom</label>
+                          <input type="text" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Nom</label>
+                          <input type="text" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Date de naissance</label>
+                          <input type="date" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Numéro de téléphone</label>
+                            <input type="tel" class="form-control" id="recipient-name" required>
+                          </div>
+                      </form>
                     </div>
-                </footer>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulé</button>
+                      <button type="button" class="btn btn-primary">Validé mon inscription</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- register at news-->
+            
+
+                
+    <div class="container">
+        <div class="d-flex justify-content-center mt-5">
+            <div class="section border py-5 mt-5">
+                <!-- follow the news of As-Sos -->
+                <div class="input-group input-group-md mb-5 pt-5 justify-content-center">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">@</span>
+                    <input type="email" class="form-control form-control-sm" id="email" placeholder="mail@exemple.com" required>
+                    <button type="submit" class="btn btn-success">S'abonné</button>
+                </div>
+                <div class="d-flex justify-content-center mt-2">
+                        <!-- Réseaux sociaux -->
+                    <img src="./Image/facebook.png" class="Logo">
+                    <img src="./Image/linkedin.png" class="Logo">
+                </div>
             </div>
-        </div>
+        </div>           
+    </div>               
+                <!--Copyright-->
+    <div class="d-flex flex-column">
+        <div class="row justify-content-center mt-5">
+            <footer class="border">
+                <div class="copyright">    
+                    <p>&copy;As-Sos</p>
+                    <p>2020-2021</p>
+                </div>
+            </footer>
+        </div>      
     </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+/*html */
+
+:root {
+    margin: 0;
+    padding: 0;
+    line-height: 5rem;
+    box-sizing: border-box;
+ }
+
+ div.carousel, .carousel-item {
+    width:100%;
+    height: 20rem;
+    object-fit: cover;
+    }

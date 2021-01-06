@@ -17,7 +17,7 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 5rem;
-    background: -webkit-linear-gradient(rgb(255, 0, 64), rgb(134, 134, 134), rgb(247, 21, 255));
+    background: -webkit-linear-gradient(#0d6efd, rgb(161, 161, 161), #0d6efd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -29,6 +29,8 @@ header h1 {
     object-fit: cover;
 }
 
+/* nav */
+
 .nav-link {
     color: rgb(248, 248, 248);
     line-height: 2rem;
@@ -37,18 +39,27 @@ header h1 {
     font-weight: bold;
 }
 
+
 .nav-link:hover {
     color: beige;
 }
 
 /* body */
 
-.flash-info, .event, .image-aside{
+/* Image */
+.flash-info,.image-aside {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
+.event {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Paragraphe */
 .p1,.p2 {
     text-align: center;
     word-wrap: break-word;
@@ -59,28 +70,57 @@ header h1 {
     font-size: 1.5rem;
 }
 
-footer p {
-    font-weight: bold;
+/* Main */
+main
+{
+  content: '';
+  width: 100%;
+  animation: animate 0.9s linear ;
 }
 
+@keyframes animate {
+  0% {
+        transform:scaleX(0);
+        transform-origin: left;
+  }
+
+  50%
+  {
+        transform:scaleX(1);
+        transform-origin: left;
+  }
+
+  50.1%
+  {
+        transform:scaleX(1);
+        transform-origin: right;
+    
+  }
+  
+  100%
+  {
+        transform:scaleX(0);
+        transform-origin: right;
+    
+  }
+}
+
+/* Section */
 article  {
     box-shadow: 0px 0px 5px red;
-    width: 100%;
 }
 
 aside {
     box-shadow: 1px 2px 6px lightblue;
-    width: 100%;
 }
-
-
 
 aside, article {
     text-align: center;
     padding: 1.5rem;
-    word-wrap: break-word;
     border-radius: 1rem;
     margin-top: 2rem;
+    height: 100%;
+    width: 100%;
 }
 
 aside span {
@@ -88,11 +128,11 @@ aside span {
     font-weight: bold;
 }
 
-
-
-/* footer */
-footer {
-    background-color: #f8f9fa;
+/* class section */
+.section {
+    border-radius: 5rem;
+    background-color:  #f8f9fa;
+    box-shadow: 0px 0px 5px black;
 }
 
 .Logo {
@@ -102,8 +142,18 @@ footer {
     object-fit: cover;
 }
 
+/* footer */
+
+footer {
+    background-color: #f8f9fa;
+    height: auto;
+}
+
+
+
 footer p {
     text-align: center;
+    font-weight: bold;
 }
 
 .copyright {
@@ -113,17 +163,31 @@ footer p {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 800px) {
 
     /* section */
-    main section{
+    main section {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
+    /* title */
+    header h1 {
+        font-weight: bold;
+        font-size: 3rem;
+        background: -webkit-linear-gradient(#0d6efd, rgb(161, 161, 161), #0d6efd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* description */
+    .p1 {
+        font-size: 1.2rem;
+    }
+
     /* button */
-    .btn button{
+    .btn button {
         width: 9rem;
     }
 }
