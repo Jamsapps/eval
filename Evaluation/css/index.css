@@ -11,12 +11,11 @@
 header {
     background-color: #f8f9fa; 
     height: auto;
-    position: sticky;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4.5rem;
     background: -webkit-linear-gradient(#0d6efd, rgb(161, 161, 161), #0d6efd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,8 +30,7 @@ header h1 {
 
 /* nav */
 
-.nav-link {
-    color: rgb(248, 248, 248);
+#navbarToggler {
     line-height: 2rem;
     letter-spacing: 0.1rem;
     font-size: 1.3rem;
@@ -40,7 +38,7 @@ header h1 {
 }
 
 
-.nav-link:hover {
+a:hover{
     color: beige;
 }
 
@@ -67,7 +65,7 @@ header h1 {
 }
 
 .p1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /* Main */
@@ -133,6 +131,9 @@ aside span {
     border-radius: 5rem;
     background-color:  #f8f9fa;
     box-shadow: 0px 0px 5px black;
+    padding: 2rem;
+    margin: 3rem;
+    height: 18rem;
 }
 
 .Logo {
@@ -146,21 +147,10 @@ aside span {
 
 footer {
     background-color: #f8f9fa;
-    height: auto;
-}
-
-
-
-footer p {
-    text-align: center;
-    font-weight: bold;
-}
-
-.copyright {
-    padding: 1rem;
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.5rem;
+    margin-bottom: 0;
+    width: auto;
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -181,9 +171,28 @@ footer p {
         -webkit-text-fill-color: transparent;
     }
 
+    /* section follow the news of as-sos */
+    .section {
+        border-radius: 5rem;
+        background-color:  #f8f9fa;
+        box-shadow: 0px 0px 5px black;
+        padding: 1rem;
+        margin: 1rem;
+        height: 18rem;
+    }
+
+    .Logo {
+        padding: 1.5rem;
+        margin: 1rem;
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+    }
+
     /* description */
     .p1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-overflow: ellipsis;
     }
 
     /* button */

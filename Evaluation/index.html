@@ -11,22 +11,19 @@
     les mauvaises actions envers l'humanités partout dans le monde.">
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="row">
-            <h1 class="text-center">As-Sos</h1>
-                <p class="p1 ">
-                    Une association crée en 1950, nous sommes plus de 150.000 personnes qui combattent chaques jours,
-                    les mauvaises actions envers l'humanités, nous aidons aussi les plus démunis partout dans le monde.
-                </p>    
+
+
+    <header>
+        <h1 class="text-center">As-Sos</h1>     
             <nav class="navbar navbar-expand-lg navbar-light bg-primary">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                     <div class="collapse navbar-collapse" id="navbarToggler">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Accueil</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="event.html">Événement</a>
@@ -34,15 +31,20 @@
                         </ul>
                     </div>
                 </div>
-            </nav>      
-        </header>
-        
-        <!-- Main > section > Article & Aside-->
-            <main>        
-                <section class="d-flex">
+            </nav> 
+        <p class="p1">
+            Une association crée en 1950, nous sommes plus de 150.000 personnes qui combattent chaques jours,
+            les mauvaises actions envers l'humanités, nous aidons aussi les plus démunis partout dans le monde.
+        </p>
+    </header>
 
+        <!-- Main > section > Article & Aside-->
+        <div class="container-fluid">    
+            <main class="position-relative">        
+                <section class="d-flex">
                     <!-- Aside événement-->
                 <div class="container">
+
                     <aside class="border">
                         <img src="./Image/event.png" alt="événement" class="event border-bottom">
                         <p>
@@ -64,9 +66,9 @@
                     <article class="border">
                         <img src="./Image/flash-info.png" class="flash-info" alt="Flash-info">
                         <p class="p2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Sit quae quos dolor aperiam numquam excepturi deserunt, repellendus cupiditate itaque. 
-                        Sed corrupti enim soluta debitis necessitatibus ad illo quas quia hic.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Sit quae quos dolor aperiam numquam excepturi deserunt, repellendus cupiditate itaque. 
+                            Sed corrupti enim soluta debitis necessitatibus ad illo quas quia hic.
                         </p>
                     </article>
                 </div>
@@ -76,7 +78,7 @@
                     <aside class="border">
                         <img src="./Image/personne.jpg" class="image-aside border-bottom">
                         <p>As-Sos à aider plus de <span>60%</span> personne partout dans le monde.</p> 
-                        <p>Vous-voulez défendre l'humanité pour contrer les mauvaises actions ou faire de bonnes actions</p>
+                        <p>Vous-voulez défendre l'humanité pour contrer les mauvaises actions ou faire des bonnes actions</p>
                         <div class="btn">
                             <a href="rejoindre.html"><button class="btn btn-primary col-15">Nous rejoindre</button></a>
                         </div>
@@ -121,20 +123,18 @@
                 </div>
               </div>
             
-            <!-- register at news-->
-            
-
                 
-    <div class="container">
+    <div class="container-fluid">
         <div class="d-flex justify-content-center mt-5">
-            <div class="section border py-5 mt-5">
+            <div class="section border py-5">
                 <!-- follow the news of As-Sos -->
-                <div class="input-group input-group-md mb-5 pt-5 justify-content-center">
+                <p class="mb-5">Rester informé sur toutes les actualités de As-Sos</p>
+                <div class="input-group input-group-sm justify-content-center">
                     <span class="input-group-text" id="inputGroup-sizing-sm">@</span>
-                    <input type="email" class="form-control form-control-sm" id="email" placeholder="mail@exemple.com" required>
+                    <input type="email" class="form-control form-control-sm w-auto" id="email" placeholder="mail@exemple.com" required>
                     <button type="submit" class="btn btn-success">S'abonné</button>
                 </div>
-                <div class="d-flex justify-content-center mt-2">
+                <div class="d-flex justify-content-center">
                         <!-- Réseaux sociaux -->
                     <img src="./Image/facebook.png" class="Logo">
                     <img src="./Image/linkedin.png" class="Logo">
@@ -142,17 +142,18 @@
             </div>
         </div>           
     </div>               
+                
+        
                 <!--Copyright-->
-    <div class="d-flex flex-column">
-        <div class="row justify-content-center mt-5">
-            <footer class="border">
-                <div class="copyright">    
-                    <p>&copy;As-Sos</p>
-                    <p>2020-2021</p>
-                </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">       
+            <footer class="container">
+                <i class="fas fa-copyright"><p class="text-center">&copy;As-Sos 2020-2021</p></i>
             </footer>
-        </div>      
+        </div>
     </div>
+     
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
