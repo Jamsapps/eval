@@ -41,8 +41,9 @@ h3 {
 
 /* footer */
 footer{
+    position: absolute;
+    bottom: 0;
     background-color: #f8f9fa;
-    width: auto;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
 }
