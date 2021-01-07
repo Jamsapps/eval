@@ -9,40 +9,35 @@
 </head>
 <body>
 
-<header>
+<header class="border-bottom">
     <h3 class="text-center">Rejoindre As-Sos</h3>
 </header>
 
-<!-- Formulaire -->
-<div class="container-form">
-    <form>
-        <div class="container row align-item-center">
+    <!-- Formulaire -->
+<div class="container">
+    <form class="row justify-content-center">
+        <div class="d-flex flex-column bd-highlight mt-4 border">   
             <!--input and label-->
-            <div class="input-group input-group-md mb-3">
+            <div class="input-group input-group-sm p-2 bd-highlight">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Prénom :</span>
-                <input type="text" class="form-control" id="prenom" placeholder="Prénom" required>
+                <input type="text" class="form-control form-control-sm" id="prenom" placeholder="Prénom" required>
             </div>
-
-            <div class="input-group input-group-md mb-3">
-                <span class="input-group-text col-3" id="inputGroup-sizing-sm">Nom :</span>
-                <input type="text" class="form-control" id="nom" placeholder="Nom" required>
+            <div class="input-group input-group-sm p-2 bd-highlight">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Nom :</span>
+                <input type="text" class="form-control form-control-sm" id="nom" placeholder="Nom" required>
             </div>
-
-            <div class="input-group input-group-md mb-3">
-                <span class="input-group-text col-3" id="inputGroup-sizing-sm">Date de naissance:</span>
-                <input type="date" class="form-control" id="date" required>
+            <div class="input-group input-group-sm p-2 bd-highlight">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Naissance:</span>
+                <input type="date" class="form-control form-control-sm" id="date" required>
             </div>
-
-            <div class="input-group input-group-md mb-3">
-                <span class="input-group-text col-3" id="inputGroup-sizing-sm">E-mail</span>
-                <input type="email" class="form-control" id="email" placeholder="Votremail@exemple.com" required>
+            <div class="input-group input-group-sm p-2 bd-highlight">
+                <span class="input-group-text" id="inputGroup-sizing-sm">E-mail</span>
+                <input type="email" class="form-control form-control-sm" id="email" placeholder="Mail@exemple.com" required>
             </div>
-            
-            <!-- Fin input and label -->
 
             <!-- Select group -->
-            <div class="select-group">
-                <select class="form-select">
+            <div class="select-group p-2 bd-highlight">
+                <select class="form-select form-select-sm">
                     <option selected>Votre situation</option>
                     <option value="1">Étudiant</option>
                     <option value="2">En recherche d'emploi</option>
@@ -50,18 +45,31 @@
                 </select>
             </div>
 
-            <!-- Text Area -->
-            <div class="mt-4">
-                <textarea type="text" class="form-control" id="message" rows="5" placeholder="Pourquoi, souhaitez-vous nous rejoindre ?" required></textarea>
-            </div>
-
+                <!-- Text Area -->
+            <div class="select-group p-2 bd-highlight">
+                <textarea type="text" class="form-control form-control-sm" id="message" rows="5" placeholder="Pourquoi, souhaitez-vous nous rejoindre ?" required></textarea>
+                
                 <button type="submit" class="btn btn-primary">Envoyé</button>
             </div>
-        </form>
+            </div>
+        </div>    
+    </form>
+</div>
+
+<!--Footer-->
+<div class="container-fluid">
+    <div class="row justify-content-center mt-5"> 
+            
+        <footer class="container">
+            <!-- button home -->
+            <div class="col-1">
+            <button type="button" class="btn btn-dark"><a class="link" href="index.html">Accueil</a></button>
+            </div>
+            <!--Copyright-->
+            <i class="fas fa-copyright"><p class="text-center">&copy;As-Sos 2020-2021</p></i>
+        </footer>
     </div>
-
-
-       
+</div>
 
 
     
