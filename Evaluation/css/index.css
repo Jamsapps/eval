@@ -16,9 +16,43 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 4.5rem;
-    background: -webkit-linear-gradient(#0d6efd, rgb(161, 161, 161), #0d6efd);
+    background: -webkit-linear-gradient(black, grey, lightgrey);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h1
+{
+  content: '';
+  width: 100%;
+  animation: animate 0.9s linear;
+}
+
+@keyframes animate {
+  0% {
+        transform:scaleX(0);
+        transform-origin: left;
+  }
+
+  50%
+  {
+        transform:scaleX(1);
+        transform-origin: left;
+  }
+
+  50.1%
+  {
+        transform:scaleX(1);
+        transform-origin: right;
+    
+  }
+  
+  100%
+  {
+        transform:scaleX(0);
+        transform-origin: right;
+    
+  }
 }
 
 .image{
@@ -67,44 +101,17 @@ header h1 {
     font-size: 1.2rem;
 }
 
-/* Main */
-h1
-{
-  content: '';
-  width: 100%;
-  animation: animate 0.9s linear;
-}
-
-@keyframes animate {
-  0% {
-        transform:scaleX(0);
-        transform-origin: left;
-  }
-
-  50%
-  {
-        transform:scaleX(1);
-        transform-origin: left;
-  }
-
-  50.1%
-  {
-        transform:scaleX(1);
-        transform-origin: right;
-    
-  }
-  
-  100%
-  {
-        transform:scaleX(0);
-        transform-origin: right;
-    
-  }
-}
-
 /* Section */
+article h2 {
+    text-shadow: 0px 0px 1px red;
+}
+
 article  {
     box-shadow: 0px 0px 5px red;
+}
+
+aside h2 {
+    text-shadow: 0px 0px 2px lightblue;
 }
 
 aside {
