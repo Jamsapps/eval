@@ -29,12 +29,16 @@ header h1 {
 }
 
 /* nav */
+.navbar-nav .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 #navbarToggler {
     line-height: 2rem;
     letter-spacing: 0.1rem;
     font-size: 1.3rem;
-    font-weight: bold;
 }
 
 /* body */
@@ -142,8 +146,8 @@ aside span {
 
 footer {
     background-color: #f8f9fa;
-    margin-bottom: 0;
     width: auto;
+    margin-bottom: 0;
     border-top-right-radius: 5rem;
     border-top-left-radius: 5rem;
 }
@@ -195,3 +199,12 @@ footer {
         width: 9rem;
     }
 }
+
+
+/* nav */
+@media screen and (max-width: 991px) {
+
+.navbar-nav .nav-item{
+    flex-direction: column;
+    }
+} 
