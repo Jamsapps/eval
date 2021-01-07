@@ -75,6 +75,10 @@ h1
     font-size: 1.3rem;
 }
 
+nav {
+    border-radius: 1.8rem;
+}
+
 /* body */
 
 /* Image */
@@ -130,6 +134,10 @@ aside, article {
 aside span {
     color: green;
     font-weight: bold;
+}
+
+.abonné {
+    text-decoration: none;
 }
 
 /* class section */
