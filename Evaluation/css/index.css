@@ -81,6 +81,12 @@ nav {
 
 /* body */
 
+  .carousel {
+    width:640px;
+    object-fit: contain;
+    margin-top: 3rem;
+  }
+
 /* Image */
 .flash-info,.image-aside {
     width: 100%;
@@ -167,7 +173,7 @@ footer {
     border-top-left-radius: 5rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 965px) {
 
     /* section */
     main section {
@@ -202,6 +208,13 @@ footer {
         width: 80px;
         object-fit: cover;
     }
+
+    /* carousel */
+    .carousel {
+        width:640px;
+        object-fit: contain;
+        margin-top: 1rem;
+      }
 
     /* description */
     .p1 {

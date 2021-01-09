@@ -15,8 +15,8 @@
 
     <header>
         <h1 class="text-center">As-Sos</h1>     
-            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary m-2">
+                <button class="navbar-toggler ms-3 bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                     <div class="collapse navbar-collapse" id="navbarToggler">
@@ -37,12 +37,12 @@
     </header>
 
         <!-- Main > section > Article & Aside-->
-        <div class="container-fluid">    
+        <div class="container-fluid mb-5">    
             <main class="position-relative">        
                 <section class="d-flex">
                     <!-- Aside événement-->
+                
                 <div class="container">
-
                     <aside class="border">
                         <h2>Événement</h2>
                         <img src="./Image/event.png" alt="événement" class="event border-bottom">
@@ -56,9 +56,11 @@
                             </br>
                             Date: 05/03/2021.
                         </p>
+                    <div class="btn">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal" data-bs-whatever="@getbootstrap">Participer à l'événement</button>
-                    </aside>
-                </div>
+                    </div>
+                </aside>
+            </div>
 
                     <!-- Article flash info -->
                 <div class="container">
@@ -69,10 +71,15 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             Sit quae quos dolor aperiam numquam excepturi deserunt, repellendus cupiditate itaque. 
                             Sed corrupti enim soluta debitis necessitatibus ad illo quas quia hic.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Sit quae quos dolor aperiam numquam excepturi deserunt, repellendus cupiditate itaque. 
+                            Sed corrupti enim soluta debitis necessitatibus ad illo quas quia hic.
                         </p>
+                    <div class="btn">
                         <button class="btn btn-dark"><a class="abonné text-white" href="#email">S'abonné</a></button>
-                    </article>
-                </div>
+                    </div>
+                </article>
+            </div>
                     
                     <!-- Aside info sur As-Sos-->
                 <div class="container">
@@ -82,12 +89,59 @@
                         <p>Plus de <span>60%</span> de personne, partout dans le monde.</p> 
                         <p>Vous-voulez défendre l'humanité pour contrer les mauvaises actions ou faire des bonnes actions</p>
                         <div class="btn">
-                            <a href="rejoindre.html"><button class="btn btn-primary col-15">Nous rejoindre</button></a>
-                        </div>
-                    </div>
+                            <a href="rejoindre.html"><button class="btn btn-primary">Nous rejoindre</button></a>
+                        </div>  
                     </aside>
-                </section>
-            </main>
+                </div>
+            </section>
+        </main>
+    </div>
+
+<section>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+                
+            
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active"></li>
+                <li data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1"></li>
+                <li data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2"></li>
+            </ol>
+            
+            
+            <!-- Inner -->
+            <div class="carousel-inner rounded mb-2 border">
+                <h2 class="text-center">Nos partenaires</h2> 
+                <div class="carousel-item active" data-bs-interval="9000"> 
+                    <img src="./Image/restoducoeur.png" class="d-block img-fluid w-auto" alt="Resto du coeur">
+                </div>
+    
+                <div class="carousel-item" data-bs-interval="9000">
+                    <img src="./Image/partenaire.jpg" class="d-block img-fluid w-auto" alt="Nos partenaires">
+                </div>
+    
+                <div class="carousel-item" data-bs-interval="9000">
+                    <img src="./Image/DigitalCampusLive.jpg" class="d-block img-fluid w-auto" alt="Studi">
+                </div>
+       
+      
+            <!-- Controls -->
+                <a class="carousel-control-prev" href="#carouselDarkVariant" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                    <a class="carousel-control-next" href="#carouselDarkVariant" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
             <!--Modal-->
             <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
@@ -127,7 +181,7 @@
             
                 
     <div class="container-fluid">
-        <div class="d-flex justify-content-center mt-5">
+        <div class="d-flex justify-content-center mt-3">
             <div class="section border py-5">
                 <!-- follow the news of As-Sos -->
                 <p class="mb-2 text-center">Rester informé sur l'actualité</p>
@@ -148,7 +202,7 @@
         
                 <!--Copyright-->
     <div class="container-fluid">
-        <div class="row justify-content-center mt-5">       
+        <div class="row justify-content-center mt-3">       
             <footer class="container">
                 <i class="fas fa-copyright"><p class="text-center">&copy;As-Sos 2020-2021</p></i>
             </footer>
