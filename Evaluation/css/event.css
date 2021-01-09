@@ -7,8 +7,66 @@
     box-sizing: border-box;
  }
 
- div.carousel, .carousel-item {
-    width:100%;
-    height: 20rem;
-    object-fit: cover;
-    }
+ header {
+   background-color: #f8f9fa; 
+   height: auto;
+}
+
+header h1 {
+   font-weight: bold;
+   font-size: 4.5rem;
+   background: -webkit-linear-gradient(black, grey, lightgrey);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/* nav */
+.navbar-nav .nav-item {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+#navbarToggler {
+   line-height: 2rem;
+   letter-spacing: 0.1rem;
+   font-size: 1.3rem;
+}
+
+nav {
+   border-radius: 1.8rem;
+   
+}
+
+/* card */
+.card {
+   text-align: center;
+}
+
+.card-img-top {
+   object-fit: cover;
+   padding: 0.5rem;
+}
+
+/* nav */
+@media screen and (max-width: 991px) {
+
+   .navbar-nav .nav-item{
+       flex-direction: column;
+       }
+   } 
+
+@media screen and (max-width: 1400px) {
+
+      .d-flex {
+          flex-direction: column;
+          width: 30rem;
+      }
+
+      .card-img-top {
+            width: auto;
+            height: auto;
+            object-fit: contain;
+         }
+} 
+   
