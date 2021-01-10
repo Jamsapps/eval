@@ -5,20 +5,35 @@
     background-color: lightgray;
 }
 
-/* Header */
+/* header */
 header {
-    background-image: linear-gradient(to right bottom, white, grey);
-    height: 5rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    background-color: #f8f9fa; 
+    height: auto;
 }
 
-h3 {
-    font-size: 2.8rem;
+header h1 {
     font-weight: bold;
-    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(138, 138, 138), rgb(65, 65, 65));
+    font-size: 4.5rem;
+    background: -webkit-linear-gradient(#8484ff, rgb(98, 124, 129), #0d6efd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* nav */
+.navbar-nav .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbarToggler {
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+}
+
+nav {
+    border-radius: 1rem;
 }
 
 /* formulaire */
@@ -39,13 +54,12 @@ h3 {
     width: 100%;
 }
 
-/* footer */
-footer{
+/* footer */ 
+
+footer {
     position: absolute;
     bottom: 0;
-    background-color: #f8f9fa;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+    width: 100%;
 }
 
 .btn-dark {
@@ -59,16 +73,23 @@ footer{
     color: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
 
     /* title */
-    h3 {
-        font-size: 2.1rem;
+    header h1 {
         font-weight: bold;
-        background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(138, 138, 138), rgb(65, 65, 65));
+        font-size: 2rem;
+        background: -webkit-linear-gradient(#0d6efd, rgb(161, 161, 161), #0d6efd);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
 }
+
+/* nav */
+@media screen and (max-width: 991px) {
+
+    .navbar-nav .nav-item{
+        flex-direction: column;
+        }
+    } 
 

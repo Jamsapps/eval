@@ -34,18 +34,31 @@ header h1 {
 }
 
 nav {
-   border-radius: 1.8rem;
+   border-radius: 1rem;
    
 }
 
 /* card */
 .card {
    text-align: center;
+   width: auto;
+   height: auto;
+   margin-block: 2rem;
 }
 
 .card-img-top {
-   object-fit: cover;
-   padding: 0.5rem;
+   width: 200px;
+   height: 200px;
+   padding: 1rem;
+   object-fit: contain;
+}
+
+/* footer */ 
+
+footer {
+   position: absolute;
+   margin-bottom: 0;
+   width: 100%;
 }
 
 /* nav */
@@ -54,19 +67,4 @@ nav {
    .navbar-nav .nav-item{
        flex-direction: column;
        }
-   } 
-
-@media screen and (max-width: 1400px) {
-
-      .d-flex {
-          flex-direction: column;
-          width: 30rem;
-      }
-
-      .card-img-top {
-            width: auto;
-            height: auto;
-            object-fit: contain;
-         }
 } 
-   
