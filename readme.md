@@ -1,4 +1,3 @@
-Qui à fait le projet : Moi, James
 Qu'est-ce que c'est : Un site d'association fictif 
 Quand as-tu bossé dessus : depuis le 3 janvier mais j'ai du refaire le site 3x
 Progression : Fini
