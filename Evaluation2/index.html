@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortress Hight Level</title>
+    <link href="index.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- CSS BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="container-sm">
+    <div class="row align-items-center">
+        <!-- Player 1 -->
+        <div class="col">
+            <div id="player1" value="">PLAYER ONE</div>
+            <div id="tour1"></div>
+        </div>
+
+        <!-- Button New Game-->
+        <div class="col">
+            <button type="button" id="btnPseudo" class="btnGame btn btn-primary">Choice of pseudo</button>
+            <button type="button" id="btnStartGame" class="btnGame btn btn-primary">Start Game</button>
+            <button type="button" id="btnRestart" class="btnGame btn btn-primary">Restart</button>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="col">
+            <div id="player2" value="">PLAYER TWO</div>
+            <div id="tour2"></div>
+        </div>
+    </div>
+</div>
+
+
+<div id="id_regles">
+    <div class="container-sm">
+        <div class="row justify-content-center p-5">
+            <h1 class="title text-center">Fortress hight level</h1>
+            <p class="border w-50">
+                <b>Les règles du jeu :</b> 
+                <br />
+                - Vous avez 200 point de vie *PV* chacun, le premier à 0 perd la partie.
+                <br />
+                - Attack pour attaquer l'adversaire.
+                <br />
+                - Repair pour réparer votre forteresse.
+                <br />
+                - Le chiffre au milieu représente le nombre de point de vie que vous gagnez ou perdez
+            <br />
+            <br />
+                Pour commencer la partie appuyer sur le bouton Start Game
+                et il vous restera plus qu'à choisir votre pseudo.
+                <b>après avoir choisi vos pseudos les règles disparaîssent</b>
+            </p>
+        </div>
+    </div>
+</div>
+        <!-- Dice in the shield -->
+    <div class="container-sm">
+        <div class="shieldDice">
+            <div id="score"></div>
+            <img id="Dice_Shield" class="shieldImg" src="./img/bouclier&epee.jpg" alt="shield">
+        </div>
+    </div>
+
+<div class="container-sm">
+    <div class="theButton">
+        <div id="theButtons">
+            <!-- Button Attack -->
+            <button id="btn_Attack" type="button" onclick="onclick_attack();" class="m-2 btn btn-danger">Attack</button>
+
+            <!-- Button Defense -->
+            <button id="btn_Repair" type="button" onclick="onclick_repair();" class="m-2 btn btn-success">Repair</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-sm">
+    <div class="row align-items-center">
+        <div id="Pv_Player1" class="PV col"></div>
+        <div id="Pv_Player2" class="PV col"></div>
+    </div>
+</div>
+
+
+    <footer class="text-center">
+        <p>&copy; <b>JamsApps</b></p>
+    </footer>
+</div>
+<script src="index.js"></script>
+
+<!-- BootStrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
